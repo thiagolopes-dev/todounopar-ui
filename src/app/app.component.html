@@ -1,1 +1,22 @@
-<router-outlet></router-outlet>
+<div
+  class="bg-bluegray-900 text-gray-100 p-3 flex justify-content-between lg:justify-content-center align-items-center flex-wrap">
+  <a class="flex align-items-center ml-2 mr-8">
+    <a class="text-white no-underline" href="/"><span class="font-bold">Aplicativo de Anotações</span></a>
+  </a>
+</div>
+
+
+<section>
+  <main class="container">
+    <router-outlet></router-outlet>
+    <!-- <app-footer></app-footer> -->
+  </main>
+</section>
+
+
+<!-- <footer class="mt-2 p-2 text-center">
+  <a class="no-underline" href="https://thiagolopesdev.com.br" target="_blank">thiagolopesdev.com.br</a>
+</footer> -->
+
+<p-confirmDialog [style]="{width: '50vw'}" [baseZIndex]="10000"
+  rejectButtonStyleClass="p-button-text"></p-confirmDialog>
