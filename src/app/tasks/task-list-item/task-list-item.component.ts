@@ -25,7 +25,7 @@ export class TaskListItemComponent implements OnInit {
 
   confirmDelete(task: Task) {
     this.confirmationService.confirm({
-      message: 'Tem certeza que deseja excluir esta tarefa?',
+      message: `Tem certeza que deseja excluir a tarefa:  <b> ${task.codigo} </b>`,
       header: 'Confirmação de exclusão',
       icon: 'pi pi-exclamation-triangle',
       accept: () => {
